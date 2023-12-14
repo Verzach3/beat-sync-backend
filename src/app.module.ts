@@ -11,6 +11,7 @@ import { AlbumsService } from './albums/albums.service';
 import { AlbumsModule } from './albums/albums.module';
 import { ArtistsService } from './artists/artists.service';
 import { ArtistsModule } from './artists/artists.module';
+import { GenresModule } from './genres/genres.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -27,6 +28,7 @@ import { ArtistsModule } from './artists/artists.module';
     SongsModule,
     AlbumsModule,
     ArtistsModule,
+    GenresModule,
   ],
   controllers: [AppController],
   providers: [AppService, PlaylistsService, AlbumsService, ArtistsService],
