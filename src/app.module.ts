@@ -6,6 +6,11 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { PlaylistsService } from './playlists/playlists.service';
 import { PlaylistsModule } from './playlists/playlists.module';
+import { SongsModule } from './songs/songs.module';
+import { AlbumsService } from './albums/albums.service';
+import { AlbumsModule } from './albums/albums.module';
+import { ArtistsService } from './artists/artists.service';
+import { ArtistsModule } from './artists/artists.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -19,8 +24,11 @@ import { PlaylistsModule } from './playlists/playlists.module';
     AuthModule,
     UsersModule,
     PlaylistsModule,
+    SongsModule,
+    AlbumsModule,
+    ArtistsModule,
   ],
   controllers: [AppController],
-  providers: [AppService, PlaylistsService],
+  providers: [AppService, PlaylistsService, AlbumsService, ArtistsService],
 })
 export class AppModule {}
