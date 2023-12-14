@@ -1,10 +1,15 @@
-import { Column, Entity, ObjectIdColumn } from 'typeorm';
+import { Column, Entity, ObjectIdColumn, ObjectId } from 'typeorm';
+import { PlaylistSongs } from './PlaylistSongs';
+import { PlaylistAuthor } from './PlaylistAuthor';
 
 @Entity()
-export class Playlist {
+export class Playlists {
   @ObjectIdColumn()
-  id: number;
-
+  id: ObjectId;
   @Column()
-  playlistName: string;
+  name: string;
+  @Column(() => PlaylistSongs)
+  songs: PlaylistSongs[];
+  @Column(() => PlaylistAuthor)
+  Autor: PlaylistAuthor[];
 }
