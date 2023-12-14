@@ -8,9 +8,6 @@ export class UserData {
   lastname: string;
 
   @Column()
-  email: string;
-
-  @Column()
   birthdate: string;
 
   @Column()
@@ -19,11 +16,9 @@ export class UserData {
   constructor(
     name: string,
     lastname: string,
-    email: string,
     birthdate: string,
     gender: string,
   ) {
-    this.email = email;
     this.name = name;
     this.lastname = lastname;
     this.birthdate = birthdate;

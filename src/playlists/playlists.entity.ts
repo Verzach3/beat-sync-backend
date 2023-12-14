@@ -9,7 +9,7 @@ export class Playlists {
   @Column()
   name: string;
   @Column(() => PlaylistSongs)
-  songs: PlaylistSongs[];
+  songs?: PlaylistSongs[];
   @Column(() => PlaylistAuthor)
-  Autor: PlaylistAuthor[];
+  Autor?: PlaylistAuthor[];
 }
