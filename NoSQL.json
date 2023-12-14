@@ -1,0 +1,131 @@
+{
+  "Playlist": [
+    {
+      "id": 12345,
+      "nombre": "Playlist 1",
+      "canciones": [
+        {
+          "id_Cancion": 12345,
+          "nombre_cancion": "Cancion 1",
+          "duracion": "Duracion 1",
+          "album": "Album 1",
+          "sencillo": false,
+          "artista": "Artista 1",
+          "genero": "Genero 1"
+        }
+      ],
+      "autor": {
+        "id": 12345,
+        "nombre": "Nombre 1"
+      }
+    }
+  ],
+  "artistas": [
+    {
+      "id": 12345,
+      "nombre": "Artista 1",
+      "biografia": "Biografia 1",
+      "albunes": [
+        {
+          "id": 12345,
+          "nombre": "Album 1",
+          "fecha": "Fecha 1",
+          "canciones":[]
+        }
+      ]
+    }
+  ],
+  "albumnes": [
+    {
+      "id": 12345,
+      "nombre": "Album 1",
+      "canciones": [
+        {
+          "id": 12345,
+          "nombre": "Cancion 1",
+          "duracion": "Duracion 1",
+          "artistas": [
+            {
+              "id": 12345,
+              "nombre": "Artista 1"
+            }
+          ]
+        }
+      ],
+      "artistas": [
+        {
+          "id": 12345,
+          "nombre": "Artista 1",
+          "biografia": "Biografia 1"
+        }
+      ]
+    }
+  ],
+  "canciones": [
+    {
+      "id": 12345,
+      "nombre": "Cancion 1",
+      "duracion": "Duracion 1",
+      "album": "Album 1",
+      "sencillo": false,
+      "artistas": [
+        {
+          "id": 12345,
+          "nombre": "Artista 1"
+        }
+      ],
+      "genero": "Genero 1"
+    }
+  ],
+  "usuario": [
+    {
+      "id": 12345,
+      "usuario": "Nombre1",
+      "contraseña": "Contraseña1",
+      "datos": {
+        "nombre": "dormilon",
+        "apellido": "correa",
+        "correo": "grabriel@gmail.com",
+        "fecha_nacimiento": "1998-12-12",
+        "genero": "masculino"
+      },
+      "favoritos": [
+        {
+          "canciones": [
+            {
+              "id": 12345,
+              "nombre": "Cancion 1",
+              "duracion": "Duracion 1",
+              "album": "Album 1",
+              "sencillo": false,
+              "artista": {
+                "id": 12345,
+                "nombre": "Artista 1"
+              }
+            }
+          ],
+          "playlist": [
+            {
+              "id": 12345,
+              "nombre": "Playlist 1",
+              "autor": {
+                "id": 12345,
+                "nombre": "Nombre 1"
+              }
+            }
+          ]
+        }
+      ],
+      "playlist": [
+        {
+          "id": 12345,
+          "nombre": "Playlist 1",
+          "autor": {
+            "id": 12345,
+            "nombre": "Nombre 1"
+          }
+        }
+      ]
+    }
+  ]
+}
