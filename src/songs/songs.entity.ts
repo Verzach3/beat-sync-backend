@@ -1,4 +1,6 @@
 import { Column, Entity, ObjectId, ObjectIdColumn } from 'typeorm';
+import { SongArtists } from './SongArtists';
+import { SongGenres } from './SongGenres';
 
 @Entity()
 export class Songs {
@@ -20,20 +22,4 @@ export class Songs {
   year: string;
   @Column()
   path: string;
-}
-
-class SongArtists {
-  @Column()
-  id: ObjectId;
-
-  @Column()
-  name: string;
-}
-
-class SongGenres {
-  @Column()
-  id: ObjectId;
-
-  @Column()
-  name: string;
 }
